@@ -1,0 +1,10 @@
+<h1>新規投稿</h1>　
+  <%= form_with model: @article, local: true do |f|%>
+    <%= f.label :title, class:"タイトル"%>
+    <%= f.text_field :title, autofocus: true%>
+
+    <%= f.label :text, class:"テキスト"%>
+    <%= f.text_field :text, autofocus: true%>
+
+    <%= f.submit "送信！"%>
+  <% end %>
